@@ -48,3 +48,4 @@ kubectl get ingress/ingress-2048 -n game-2048
 
 # step: 11 Deploying TLS Version
 ## Remember to first create your ACM TLS Cert, as well as the required Route 53 records for your ALB. Also, remember to remove the dualstack. from the Alias record name!
+kubectl apply -f ./9-tls-ingress-config.yaml
